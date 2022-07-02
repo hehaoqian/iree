@@ -87,6 +87,8 @@ IREE_API_EXPORT void iree_hal_fence_fail(iree_hal_fence_t* fence,
 IREE_API_EXPORT iree_hal_semaphore_list_t
 iree_hal_fence_semaphore_list(iree_hal_fence_t* fence);
 
+IREE_API_EXPORT void iree_hal_fence_destroy(iree_hal_fence_t* fence);
+
 #ifdef __cplusplus
 }  // extern "C"
 #endif  // __cplusplus
